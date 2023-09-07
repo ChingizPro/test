@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+span, a {
+    display: inline-block;
+}
+.bottom {
+    border: 3px solid black;
+    max-width: 1100px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px 0;
+    overflow: hidden;
+}
+.part1 {
+    background-color: lime;
+    width: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+.part2 {
+    background-color: hotpink;
+    width: 40%;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+.pic {
+    width: 25%;
+}
+.info {
+    width: 70%;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.lines {
+    flex-grow: 1;
+    height: 3px;
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+.line {
+    height: 100%;
+}
+.line1 {
+    width: 35%;
+    background-color: black;
+}
+.line2 {
+    width: 65%;
+    background-color: gray;
+}
+.circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black;
+}
+.part3 {
+    background-color: aqua;
+    width: 50%;
+    flex-grow: 1;
+    margin-left: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.song {
+    width: 28%;
+    flex-shrink: 0;
+    border: 3px solid red;
+}
+.songbg {
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.songbg i {
+    opacity: 0;
+    transition: 0.2s opacity linear;
+}
+.songbg:hover i {
+    opacity: 1;
+}
+.songbg1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/music-with-you.jpg");
+    transform: scale(1.2);
+}
+.songbg2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/music-butter.jpg");
+}
+.songbg3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/music-back-together.jpg");
+}
+.songbg4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/music-unwind.jpg");
+}
+@media(max-width:900px){
+    .songbg {
+        height: 90px;
+    }
+}
+@media(max-width:720px){
+    .part3 {
+        width: 100%;
+        margin-left: 0;
+    }
+    .part2 {
+        flex-grow: 1;
+    }
+    .part1 {
+        width: auto;
+        padding: 20px;
+    }
+    .song {
+        width: 25%;
+    }
+    .songbg1 {
+        transform: scale(1);
+    }
+    .songbg {
+        height: 170px;
+    }
+}
+@media(max-width:600px){
+    .songbg {
+        height: 100px;
+    }
+}
+@media(max-width:400px){
+    .part3 {
+        flex-wrap: wrap;
+    }
+    .song {
+        width: 50%;
+    }
+}
+@media(max-width:330px){
+    .part2, .part1 {
+        width: 100%;
+    }
+}
